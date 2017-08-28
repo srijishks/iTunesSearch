@@ -1,0 +1,10 @@
+<div class="container-fluid hdr-back">
+	<div class="row" style="margin: 10px auto; padding: 20px 0px; ">
+	    <div class="input-group col-md-6 col-centered">
+	      <input type="text" class="form-control" name="movie" #movie placeholder="Search for Audio Track..." (keyup.enter)="search(movie.value)">
+	      <span class="input-group-btn">
+	        <button class="btn btn-default" type="button" (click)="search(movie.value)" >Go!</button>
+	      </span>
+	    </div>
+	</div>
+</div>

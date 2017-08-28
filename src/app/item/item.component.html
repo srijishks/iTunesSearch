@@ -1,0 +1,21 @@
+
+        <div class="thumbnail min-h-440">
+            <img class="group list-group-image" src="{{row.artworkUrl100|resolution:300:300}}" alt="" />
+            <div class="caption">
+                <h4 class="group inner list-group-item-heading">
+                   {{row.trackName}}</h4>
+                <p class="group inner list-group-item-text">
+                    {{row.collectionName}}
+                 </p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">
+                            {{row.collectionPrice | currency:'USD':true}}</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <a class="btn btn-success" href="{{row.trackViewUrl}}" target="_blank">Track</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    

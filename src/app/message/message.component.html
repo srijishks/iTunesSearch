@@ -1,0 +1,24 @@
+<div class="container messge-text"> 
+	<div class="alert alert-danger" role="alert" *ngIf="showmsg=='failed'">
+	  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+	  <span class="sr-only">Error:</span>
+	 Error: Please try again later
+	</div>
+
+	<div class="alert alert-success" *ngIf="showmsg=='loading'">
+		<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" aria-hidden="true"></span>
+		 Loading... Please wait
+	</div>
+
+	<div class="alert alert-warning" *ngIf="showmsg=='noresult'">
+		<span class="glyphicon glyphicon glyphicon-alert" aria-hidden="true"></span>
+		 No result found for this search criteria.
+	</div>
+
+	<div class="alert alert-warning" *ngIf="showmsg=='novalue'">
+		<span class="glyphicon glyphicon glyphicon-alert" aria-hidden="true"></span>
+		Please enter a value to search
+	</div>
+
+
+</div>
