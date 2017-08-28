@@ -9,9 +9,7 @@ export class MovieService {
     constructor(private globals: Globals, private _http:Http) { }
     searchmovie(moviename: any): Observable<Movie> {
 
-      this._http.post('./apiLog.php', moviename);
-
-       let headers = new Headers({ 'Access-Control-Allow-Origin': '*' }); 
+        let headers = new Headers({ 'Access-Control-Allow-Origin': '*' }); 
         headers.append('Access-Control-Allow-Headers', 'Content-Type');
         headers.append('Access-Control-Allow-Methods', 'GET, POST');
        /*  let options = new RequestOptions({ headers: headers }); // Create a request option*/
