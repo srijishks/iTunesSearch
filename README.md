@@ -3,7 +3,7 @@
 This is a single page application for searching the iTunes track.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
-## Deployed in github in the following
+## Deployed in github in the following link
 https://srijishks.github.io/iTunesSearch/
 
 ## Development server
